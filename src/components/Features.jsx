@@ -2,18 +2,33 @@ import { motion } from 'framer-motion';
 
 const featuresList = [
   {
-    title: "AI-Enhanced Insights",
-    description: "Leverage artificial intelligence to analyze and extract valuable insights from your user data.",
+    title: "Advanced Communication",
+    description: "Efficient, real-time messaging systems streamline communication between teams and clients, reducing delays and boosting productivity.",
     icon: "🤖"
   },
   {
-    title: "Multi-Platform Integration",
-    description: "Seamlessly connect with Twitter, Telegram, and email platforms for comprehensive data gathering.",
+    title: "Premium Assets",
+    description: "Access exclusive, high-quality resources that empower your team to perform at its best, without distractions or frustrating delays.",
     icon: "🔄"
   },
   {
-    title: "Revenue Optimization",
-    description: "Convert leads more effectively with data-driven strategies and automated workflows.",
+    title: "Acquire New Customers",
+    description: "Attract new clients by offering personalized, seamless experiences, designed to improve engagement and long-term loyalty.",
+    icon: "📈"
+  },
+  {
+    title: "Seamless Integrations",
+    description: "Easily connect your tools and platforms to create a unified workflow that eliminates data silos and enhances efficiency.",
+    icon: "🤖"
+  },
+  {
+    title: "Real-time Analytics",
+    description: "Stay informed with instant data updates that allow you to make proactive decisions and optimize your business strategies on the go.",
+    icon: "🔄"
+  },
+  {
+    title: "Customizable Workflows",
+    description: "Adapt your task management process with flexible workflows that align with your team’s unique needs, ensuring maximum productivity.",
     icon: "📈"
   }
 ];
@@ -27,12 +42,13 @@ const Features = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-            Powerful Features
-          </h2>
+          <h4 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+          Transform Your Task Process
+          </h4>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Transform your business with our cutting-edge tools and features
+          This might involve personally identifying the user, suggesting tailored item <br />suggestions, or recalling prior tastes.
           </p>
         </motion.div>
 
@@ -44,7 +60,7 @@ const Features = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.2 }}
+              transition={{ delay: index * 0.1 }}
             >
               <div className="text-4xl mb-4 bg-gray-800 w-16 h-16 rounded-xl flex items-center justify-center">
                 {feature.icon}

@@ -51,7 +51,7 @@ const Testimonials = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.2 }}
+              transition={{ delay: index * 0.3 }}
             >
               <p className="text-gray-300 mb-6 leading-relaxed">
                 {testimonial.content}

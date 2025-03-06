@@ -12,17 +12,17 @@ const plans = [
       "Lifetime support"
     ]
   },
-  {
-    name: "Starter",
-    price: "15",
-    description: "Perfect for inpetendent sellers",
-    features: [
-      "20 members",
-      "5 teams",
-      "Up to 500 leads",
-      "Lifetime support"
-    ]
-  },
+  // {
+  //   name: "Starter",
+  //   price: "15",
+  //   description: "Perfect for inpetendent sellers",
+  //   features: [
+  //     "20 members",
+  //     "5 teams",
+  //     "Up to 500 leads",
+  //     "Lifetime support"
+  //   ]
+  // },
   {
     name: "Pro",
     price: "20",
@@ -60,7 +60,7 @@ const Pricing = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 gap-4">
           {plans.map((plan, index) => (
             <motion.div
               key={index}

@@ -36,7 +36,7 @@ export default function ImageCards() {
     <div className="pt-32 pb-20 px-4 bg-black">
       <div className="max-w-7xl mx-auto text-center">
         <motion.h1
-          className="text-4xl text-white md:text-6xl font-bold mb-6"
+          className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-[#FFA861] via-[#C78BC1] to-[#7B6BE6] bg-clip-text text-transparent"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -45,7 +45,7 @@ export default function ImageCards() {
         </motion.h1>
 
         <motion.p
-          className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto"
+          className="text-lg md:text-xl text-gray-400 mb-8 max-w-2xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
@@ -55,8 +55,8 @@ export default function ImageCards() {
         </motion.p>
 
         <motion.button
-          className="bg-gray-800 text-white px-8 py-4 rounded-full text-lg font-medium
-                     hover:bg-gray-800 transition-colors transform hover:scale-105"
+          className="bg-[#EAA879] text-black px-8 py-4 rounded-full text-lg font-medium 
+                   hover:bg-[#e09565] transition-colors transform hover:scale-105"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}

@@ -4,24 +4,24 @@ import { useRef } from 'react';
 const Product = () => {
   const features = [
     {
-      title: "Smart Lead Scoring",
-      description: "AI-powered algorithms rank leads based on likelihood to convert, helping you focus on high-value prospects.",
+      title: "Track Your Finances with Ease",
+      description: "Get a comprehensive overview of your financial performance. Monitor net sales, visualize trends over time, and make data-driven decisions to optimize your revenue growth.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop",
       showButtons: true
     },
     {
-      title: "Automated Workflows",
-      description: "Create intelligent automation sequences for lead nurturing and engagement tracking.",
+      title: "Manage Your Discounts Effectively",
+      description: "Easily organize and track all active discounts in one place. Keep your promotions up-to-date and ensure your customers enjoy the best offers tailored to their needs.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop"
     },
     {
-      title: "Data Enrichment",
-      description: "Automatically enrich leads with data from multiple sources including social media and business databases.",
+      title: "Boost Your Marketing Impact",
+      description: "Understand your marketing performance at a glance. Track online sessions, monitor conversions, and adjust your strategies to drive better engagement and sales.",
       image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=500&h=300&fit=crop"
     },
     {
-      title: "Predictive Analytics",
-      description: "Use machine learning to predict customer behavior and identify trends before they emerge.",
+      title: "Deep Dive into Your Analytics",
+      description: "Gain insights into key metrics, compare performance over time, and stay on top of trends. From sales data to customer behavior, make informed decisions with powerful analytics at your fingertips.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop"
     }
   ];
@@ -67,7 +67,7 @@ const Product = () => {
 
           {/* Right Column - Content */}
           <motion.div className="space-y-8">
-            <div>
+            {/* <div>
               <motion.span
                 className="text-blue-500 font-semibold mb-2 block"
                 initial={{ opacity: 0 }}
@@ -82,7 +82,7 @@ const Product = () => {
               <p className="text-gray-400 text-lg">
                 Our comprehensive suite of tools helps you manage, analyze, and optimize your lead generation process.
               </p>
-            </div>
+            </div> */}
 
             {/* Feature List */}
             <div className="space-y-48">
@@ -95,11 +95,11 @@ const Product = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.2 }}
-                >
+                > 
                   <div className="space-y-4">
-                    <h3 className="text-white font-semibold text-lg">
+                    <h4 className="text-3xl md:text-3xl font-bold mb-4 text-white">
                       {feature.title}
-                    </h3>
+                    </h4>
                     <p className="text-gray-400 leading-relaxed">
                       {feature.description}
                     </p>
@@ -108,26 +108,26 @@ const Product = () => {
                       <div className="space-y-6">
                         {/* Content Type Buttons */}
                         <div className="flex flex-wrap gap-3">
-                          <button className="px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg flex items-center gap-2 text-sm">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                          <button className="px-4 py-2 bg-gray-900 hover:bg-gray-600 text-white rounded-lg flex items-center gap-2 text-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="#EAA879">
                               <path d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" />
                             </svg>
                             Text
                           </button>
-                          <button className="px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg flex items-center gap-2 text-sm">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                          <button className="px-4 py-2 bg-gray-900 hover:bg-gray-600 text-white rounded-lg flex items-center gap-2 text-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="#EAA879">
                               <path fillRule="evenodd" d="M8 4a3 3 0 00-3 3v4a3 3 0 006 0V7a1 1 0 112 0v4a5 5 0 01-10 0V7a5 5 0 0110 0v4a7 7 0 11-14 0V7a7 7 0 0114 0v4a1 1 0 11-2 0V7a3 3 0 00-3-3z" clipRule="evenodd" />
                             </svg>
                             File
                           </button>
-                          <button className="px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg flex items-center gap-2 text-sm">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                          <button className="px-4 py-2 bg-gray-900 hover:bg-gray-600 text-white rounded-lg flex items-center gap-2 text-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="#EAA879">
                               <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z" />
                             </svg>
                             Video
                           </button>
-                          <button className="px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg flex items-center gap-2 text-sm">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                          <button className="px-4 py-2 bg-gray-900 hover:bg-gray-600 text-white rounded-lg flex items-center gap-2 text-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="#EAA879">
                               <path fillRule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clipRule="evenodd" />
                             </svg>
                             Link
@@ -135,7 +135,7 @@ const Product = () => {
                         </div>
 
                         {/* Get Template Button */}
-                        <button className="w-full sm:w-auto px-8 py-4 bg-gray-900 hover:from-blue-700 hover:to-blue-800 text-white rounded-full flex items-center justify-center text-base font-semibold transition-all duration-200 shadow-lg hover:shadow-xl">
+                        <button className="w-full sm:w-auto px-8 py-4 bg-[#EAA879] hover:from-blue-700 hover:to-blue-800 text-black rounded-full flex items-center justify-center text-base font-semibold transition-all duration-200 shadow-lg hover:shadow-xl">
                           Get Template
                         </button>
                       </div>
