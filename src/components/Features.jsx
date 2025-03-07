@@ -1,30 +1,31 @@
 import { motion } from 'framer-motion';
 
+
 const featuresList = [
   {
     title: "Advanced Communication",
     description: "Efficient, real-time messaging systems streamline communication between teams and clients, reducing delays and boosting productivity.",
-    icon: "🤖"
+    icon: "💬"
   },
   {
     title: "Premium Assets",
     description: "Access exclusive, high-quality resources that empower your team to perform at its best, without distractions or frustrating delays.",
-    icon: "🔄"
+    icon: "📋"
   },
   {
     title: "Acquire New Customers",
     description: "Attract new clients by offering personalized, seamless experiences, designed to improve engagement and long-term loyalty.",
-    icon: "📈"
+    icon: "👤"
   },
   {
     title: "Seamless Integrations",
     description: "Easily connect your tools and platforms to create a unified workflow that eliminates data silos and enhances efficiency.",
-    icon: "🤖"
+    icon: "➡️"
   },
   {
     title: "Real-time Analytics",
     description: "Stay informed with instant data updates that allow you to make proactive decisions and optimize your business strategies on the go.",
-    icon: "🔄"
+    icon: "📊"
   },
   {
     title: "Customizable Workflows",
@@ -56,13 +57,13 @@ const Features = () => {
           {featuresList.map((feature, index) => (
             <motion.div
               key={index}
-              className="bg-gray-800 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-1"
+              className="bg-black-300 p-6 rounded-2xl border border-white-300  transition-all duration-300 transform hover:-translate-y-1"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
             >
-              <div className="text-4xl mb-4 bg-gray-800 w-16 h-16 rounded-xl flex items-center justify-center">
+              <div className="text-3xl mb-4  w-8 h-8 rounded-xl flex items-center justify-center">
                 {feature.icon}
               </div>
               <h3 className="text-xl font-semibold mb-3 text-white">
