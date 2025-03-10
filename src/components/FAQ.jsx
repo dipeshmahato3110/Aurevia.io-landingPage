@@ -28,10 +28,10 @@ const FAQ = () => {
     <section className="py-24 bg-black">
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-inter">
           Frequently Asked Questions
           </h2>
-          <p className="text-white text-lg">
+          <p className="text-white text-lg font-inter">
           Get quick answers to the most common questions about our platform.
           </p>
         </div>
@@ -46,11 +46,11 @@ const FAQ = () => {
               transition={{ delay: index * 0.1 }}
             >
               <button
-                className="w-full bg-gray-900 border border-gray-200 rounded-lg p-6 text-left hover:border-blue-500 transition-colors duration-200"
+                className="w-full bg-gray-900 border border-gray-200 rounded-lg p-6 text-left hover:border-blue-500 transition-colors duration-200 font-inter"
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
               >
                 <div className="flex justify-between items-center">
-                  <h3 className="text-lg font-semibold text-white">
+                  <h3 className="text-lg font-semibold text-white font-inter">
                     {faq.question}
                   </h3>
                   <svg
@@ -70,7 +70,7 @@ const FAQ = () => {
                   </svg>
                 </div>
                 {openIndex === index && (
-                  <p className="mt-4 text-gray-600 leading-relaxed">
+                  <p className="mt-4 text-gray-600 leading-relaxed font-inter">
                     {faq.answer}
                   </p>
                 )}

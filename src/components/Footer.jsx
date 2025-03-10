@@ -45,8 +45,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold">Aurevia.io</h3>
-            <p className="text-gray-400 max-w-sm">
+            <h3 className="text-2xl font-bold font-inter font-inter"> font-inter font-inter</h3>
+            <p className="text-gray-400 max-w-sm font-inter font-inter">
               Turn leads into revenue with AI-enhanced insights and powerful business tools.
             </p>
             <div className="flex space-x-4">
@@ -87,7 +87,7 @@ const Footer = () => {
 
           {/* Contact */}
           <FooterSection title="Contact">
-            <ul className="space-y-2 text-gray-400">
+            <ul className="space-y-2 text-gray-400 font-inter">
               <li>contact@urevia.io</li>
               <li>+1 (555) 123-4567</li>
               <li>123 AI Street, Tech Valley, UK</li>
@@ -98,14 +98,14 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-gray-400">
+            <p className="text-gray-400 font-inter">
               © {currentYear} Aurevia.io. All rights reserved.
             </p>
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="text-gray-400 hover:text-white transition-colors font-inter">
                 Privacy Policy
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="text-gray-400 hover:text-white transition-colors font-inter">
                 Terms of Service
               </a>
             </div>

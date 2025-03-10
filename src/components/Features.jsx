@@ -45,10 +45,10 @@ const Features = () => {
           viewport={{ once: true }}
           
         >
-          <h4 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+          <h4 className="text-3xl md:text-4xl font-bold mb-4 text-white font-inter">
           Transform Your Task Process
           </h4>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-gray-400 max-w-2xl mx-auto font-inter">
           This might involve personally identifying the user, suggesting tailored item <br />suggestions, or recalling prior tastes.
           </p>
         </motion.div>
@@ -66,10 +66,10 @@ const Features = () => {
               <div className="text-3xl mb-4  w-8 h-8 rounded-xl flex items-center justify-center">
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-white">
+              <h3 className="text-xl font-semibold mb-3 text-white font-inter">
                 {feature.title}
               </h3>
-              <p className="text-gray-400 leading-relaxed">
+              <p className="text-gray-400 leading-relaxed font-inter">
                 {feature.description}
               </p>
             </motion.div>

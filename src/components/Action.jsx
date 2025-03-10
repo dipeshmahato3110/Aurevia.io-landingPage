@@ -24,10 +24,10 @@ const Action = () => {
               viewport={{ once: true }}
               className="space-y-8"
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-white">
+              <h2 className="text-3xl md:text-4xl font-bold text-white  font-inter">
               Streamline Your Workflow
               </h2>
-              <p className="text-gray-400 text-lg">
+              <p className="text-gray-400 text-lg font-inter">
               Maximize productivity with our intuitive software. Effortlessly manage tasks, automate repetitive processes, and keep your team aligned with real-time updates and insights.
               </p>
             </motion.div>

@@ -47,10 +47,10 @@ const Pricing = () => {
       </div>
       <div className="max-w-7xl mx-auto px-4 ">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-inter font-inter">
             Simple Pricing for Every Team
           </h2>
-          <p className="text-white text-lg max-w-2xl mx-auto">
+          <p className="text-white text-lg max-w-2xl mx-auto font-inter font-inter">
             Choose the plan that fits your needs, whether you're just starting out or scaling your business. 
           </p>
         </div>
@@ -64,7 +64,7 @@ const Pricing = () => {
                 onClick={() => setActiveIndex(index)}
                 className={`relative cursor-pointer ${
                   isActive 
-                    ? "bg-gradient-to-b from-[#FFA861] via-[#C78BC1] to-[#7B6BE6] z-10 transform md:-translate-y-4 scale-110 h-75" 
+                    ? "bg-gradient-to-b from-[#FFA861] via-[#C78BC1] to-[#7B6BE6] z-10 transform md:-translate-y-4 scale-110 h-75 font-inter font-inter" 
                     : "bg-gray-900 z-0 hover:scale-105"
                 } p-8 rounded-xl border ${
                   isActive 
@@ -82,7 +82,7 @@ const Pricing = () => {
                 </div>
 
                 <div className="mb-8">
-                  <h3 className="text-2xl font-semibold text-white mb-2">
+                  <h3 className="text-2xl font-semibold text-white mb-2 font-inter">
                     {plan.name}
                   </h3>
                   <p className={`${isActive ? "text-blue-100" : "text-gray-400"}`}>
