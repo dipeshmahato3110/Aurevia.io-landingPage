@@ -13,6 +13,7 @@ import Transform from './components/Transform';
 import Content from './components/Content';
 
 
+
 function App() {
   return (
     <Router>
@@ -21,16 +22,21 @@ function App() {
           <Navbar />
           <main>
             <Hero />
-            <Features />
-            <Product />
+            <section id="features"> <Features /></section>
+            
+           <section id="product">  <Product /></section>
+           
             <Testimonials />
             <Content/>
-            <Action />
+            <section id="action"> <Action /></section>
+            
             <FAQ />
-            <Pricing />
+            <section id="pricing"> <Pricing /></section>
+            
             <Transform />
           </main>
           <Footer />
+   
         </div>
       </AnimatePresence>
     </Router>

@@ -41,11 +41,11 @@ const Pricing = () => {
   const [activeIndex, setActiveIndex] = useState(1); // Pro plan is default active
 
   return (
-    <section id="pricing" className="py-24 bg-black">
+    <section id="pricing" className="py-24 bg-black mb-30">
             <div className="absolute inset-0 z-0">
         <div className="absolute bottom-1/3 left-1/4 w-64 h-64 bg-purple-600/20 rounded-full blur-3xl"></div>
       </div>
-      <div className="max-w-7xl mx-auto px-4 ">
+      <div className="max-w-7xl mx-auto px-6 ">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-inter font-inter">
             Simple Pricing for Every Team
