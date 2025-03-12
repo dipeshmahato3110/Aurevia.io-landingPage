@@ -37,13 +37,13 @@ const Navbar = () => {
         } backdrop-blur-[5px] m-2 rounded-3xl border border-white/10`}>
           <nav className="px-6 py-3">
             <div className="flex items-center justify-between">
-              <Link to="/" className="flex items-center">
+            <button onClick={() => scrollToSection('hero')} className="flex items-center">
                 <img 
                   src={Image} 
                   alt="Aurevia.io Logo" 
                   className="h-8 w-auto"
                 />
-              </Link>
+              </button>
               
               {/* Mobile menu button */}
               <button 

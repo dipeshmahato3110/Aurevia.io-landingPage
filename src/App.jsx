@@ -21,7 +21,8 @@ function App() {
         <div className="min-h-screen bg-gray-900">
           <Navbar />
           <main>
-            <Hero />
+            <section id="hero"><Hero /> </section>
+            
             <section id="features"> <Features /></section>
             
            <section id="product">  <Product /></section>
